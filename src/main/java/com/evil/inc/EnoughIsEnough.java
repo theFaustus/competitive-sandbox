@@ -1,8 +1,18 @@
 package com.evil.inc;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.IntStream;
 
 public class EnoughIsEnough {
+
+    public static int[] deleteNthBetterApproach(int[] elements, int maxOccurrences) {
+        Map<Integer, Integer> occurrence = new HashMap<>();
+        return IntStream.of(elements)
+                .filter(element -> occurrence.merge(element, 1, Integer::sum) <= maxOccurrences)
+                .toArray();
+    }
 
     public static int[] deleteNth(int[] elements, int maxOccurrences) {
 
