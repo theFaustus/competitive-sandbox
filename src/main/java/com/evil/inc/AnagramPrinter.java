@@ -6,6 +6,17 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class AnagramPrinter {
+    public static void main(String[] args) {
+        String[] split = "Its always better if you find edge cases by yourself rather than buying test cases with valuable hackos!!   May be this case won't help you to find the   buuuuuug  ".split(" |\\!|,|\\?|\\.|_|'|@");
+        long count = Arrays.stream(split)
+                .filter(s -> !s.isEmpty())
+                .count();
+        System.out.println(count);
+        Arrays.stream(split)
+                .filter(s -> !s.isEmpty())
+                .forEach(System.out::println);
+    }
+
     static boolean isAnagram(String a, String b) {
         if (a.length() != b.length()) return false;
         List<String> aa = Stream.of(a.toLowerCase().split("")).sorted().collect(Collectors.toList());
