@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
 
-public class EnoughIsEnough {
+public class EnoughIsEnoughKata {
 
     public static int[] deleteNthBetterApproach(int[] elements, int maxOccurrences) {
         Map<Integer, Integer> occurrence = new HashMap<>();

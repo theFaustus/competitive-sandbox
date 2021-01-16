@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AmicablePairTest {
+public class BuddyPairKataTest {
 
     private static void testing(long start, long limit, String expected) {
         System.out.println("start: " + start);
         System.out.println("limit: " + limit);
-        String actual = AmicablePair.buddy(start, limit);
+        String actual = BuddyPairKata.buddy(start, limit);
         System.out.println("Expect: " + expected);
         assertEquals(expected, actual);
     }

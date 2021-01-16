@@ -26,7 +26,7 @@ package com.evil.inc;
  * buddy(10, 50) returns "(48 75)"
  * buddy(48, 50) returns "(48 75)"
  */
-class AmicablePair {
+class BuddyPairKata {
     public static String buddy(long start, long limit) {
         for (long n = start; n < limit; n++) {
             long m = getSumOfDivisors(n) - 1;

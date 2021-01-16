@@ -1,6 +1,6 @@
 package com.evil.inc;
 
-public class SumOfSquares {
+public class SumOfSquaresKata {
     /**
      * The task is simply stated. Given an integer n (3 < n < 109), find the length of the smallest list of perfect squares which add up to n. Come up with the best algorithm you can; you'll need it!
      * <p>
