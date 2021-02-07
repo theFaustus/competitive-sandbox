@@ -1,8 +1,8 @@
 package com.evil.inc;
 
+import com.evil.inc.BinaryTreeInverter.TreeNode;
 import org.junit.Test;
 
-import static com.evil.inc.BinaryTreeInverter.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
