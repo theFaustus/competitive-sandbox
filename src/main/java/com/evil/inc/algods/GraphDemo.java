@@ -1,6 +1,6 @@
 package com.evil.inc.algods;
 
-public class Demo {
+public class GraphDemo {
     public static void main(String[] args) {
         Graph graph = new Graph();
         graph.addNode(new Graph.Node(1));
