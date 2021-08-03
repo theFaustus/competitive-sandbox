@@ -1,6 +1,5 @@
 package com.evil.inc;
 
-import com.sun.xml.internal.ws.api.message.Packet;
 
 /**
  * Build a Car
