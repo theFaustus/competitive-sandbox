@@ -13,10 +13,10 @@ Sample Output
     * */
     public static int[] bubbleSort(int[] array) {
         boolean isSorted = false;
-        int lockedIndex = array.length;
+        int lockedIndex = array.length - 1;
         while (!isSorted) {
             isSorted = true;
-            for (int i = 0, j = 1; i < lockedIndex - 1; i++, j++) {
+            for (int i = 0, j = 1; i < lockedIndex; i++, j++) {
                 if (array[i] > array[j]) {
                     int temp = array[j];
                     array[j] = array[i];
